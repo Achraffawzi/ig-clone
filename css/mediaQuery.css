@@ -1,0 +1,65 @@
+@media only screen and (min-width: 1041px) {
+    .container {
+        width: 50%;
+    }
+    .header .container {
+        width: 90%;
+    }
+    /* ====================== PROFILE PAGE ======================== */
+    .profile-posts {
+        grid-template-columns: repeat(auto-fit, 400px);
+    }
+}
+
+
+@media only screen and (max-width: 1040px) {
+    .posts {
+        width: 60%;
+    }
+    /* ====================== PROFILE PAGE ======================== */
+    .profile-posts {
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 996px) {
+    /* ====================== PRIVATE CHAT =========================== */
+    .private-chat-container .container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* ====================== PRIVATE CHAT =========================== */
+    .private-chat-container .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding-bottom: 40px;
+    }
+    
+    .header .header-right a {
+        display: none;
+    }
+
+    .header .header-right a:last-of-type,
+    .header .header-right a:nth-of-type(4) {
+        display: block;
+    }
+    
+    .posts {
+        width: 100%;
+    }
+
+    .bottom-navbar {
+        display: flex;
+    }
+
+    /* ====================== PROFILE PAGE ======================== */
+    .profile-posts {
+        grid-template-columns: repeat(auto-fit, 200px);
+    }
+}

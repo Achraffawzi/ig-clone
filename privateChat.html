@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <script src="https://kit.fontawesome.com/3cfea9a482.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <!-- Header Left -->
+            <a href="index.html">
+                <img src="images/ig-logo.png" alt="Instagram" class="ig-logo" />
+            </a>
+            <!-- Header middle -->
+            <div class="header-middle">
+                <input type="text" class="input-search" placeholder="Search"/>
+                <i class="fas fa-search"></i>
+            </div>
+            <!-- Header Right -->
+            <div class="header-right">
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-heart"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-bell"></i>
+                </a>
+                <a href="chat.html">
+                    <i class="fas fa-comments" id="chat-icon"></i>
+                </a>
+                <a href="profile.html">
+                    <img src="images/bill-gates-avatar.jpg" alt="Avatar" class="avatar-image" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="private-chat-container">
+        <div class="container">
+            <!-- top -->
+            <div class="private-chat-top">
+                <a href="#">
+                    <img src="images/bill-gates-avatar.jpg" alt="" class="contact-image">
+                </a>
+                <span class="contact-username">Bill Gates</span>
+                <i class="fas fa-circle online-dot"></i>
+                <span class="status">Online</span>
+            </div>
+            <!-- middle -->
+            <div class="private-chat-body" id="private-chat-body">
+                <p class="message">Hey!</p>
+                <p class="friend-message">Hey!</p>
+            </div>
+            <!-- bottom -->
+            <div class="private-chat-bottom">
+                <i class="fas fa-grin-alt"></i>
+                <form action="">
+                    <input type="text" class="input-message" id="input-message" placeholder="Message..." />
+                    <button type="submit">Send</button>
+                </form>
+                <i class="far fa-paper-plane" id="send-icon"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bottom navbar for small devices -->
+    <div class="bottom-navbar">
+        <a href="index.html">
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="">
+            <i class="fas fa-bell"></i>
+        </a>
+        <a href="">
+            <i class="fas fa-heart"></i>
+        </a>
+        <a href="profile.html">
+            <img src="images/bill-gates-avatar.jpg" alt="Avatar" class="avatar-image" />
+        </a>
+    </div>
+
+
+    <script defer src="js/main.js"></script>
+</body>
+</html>
