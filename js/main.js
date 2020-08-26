@@ -28,6 +28,51 @@ for(let i = 0; i < commentButton.length; i++) {
     commentInput[i].value = "";
 }
 
+/* ====================== SHARING A POST FUNCTIONALITY ====================== */
+let sharePostIcon = document.getElementsByClassName('sharePostIcon'),
+    shareContainer = document.getElementById('shareContainer'),
+    overlay = document.getElementById('overlay'),
+    closeIcon = document.getElementById('shareContainer__top__closeIcon');
+
+for(let i = 0; i < sharePostIcon.length; i++) {
+    sharePostIcon[i].addEventListener('click', () => {
+        shareContainer.style.display = 'block';
+        // shareContainer.style.transform = 'scale(1)';
+        overlay.classList.add('overlay--active');
+    });
+}
+
+/* CLOSING THE SHARE POST CONTAINER */
+closeIcon.addEventListener('click', () => {
+    shareContainer.style.display = 'none';
+    overlay.classList.remove('overlay--active');
+});
+
+/* SELECTING THE FRIEND T SHARE THE POST WITH */
+let friendToShare = document.getElementsByClassName('shareContainer__body__friend'),
+    selectIcon  = document.getElementsByClassName('shareContainer__body__selectIcon');
+for(let i = 0; i < friendToShare.length; i++) {
+    friendToShare[i].addEventListener('click', () => {
+
+        if(selectIcon[i].className.includes('far fa-circle')) {
+            selectIcon[i].classList.remove('far');
+            selectIcon[i].classList.remove('fa-circle');
+            selectIcon[i].classList.add('fas');
+            selectIcon[i].classList.add('fa-check-circle');
+            selectIcon[i].style.color = 'rgb(53, 111, 219)';
+
+        } else {
+            selectIcon[i].classList.remove('fas');
+            selectIcon[i].classList.remove('fa-check-circle');
+            selectIcon[i].classList.add('far');
+            selectIcon[i].classList.add('fa-circle');
+            selectIcon[i].style.color = '#ddd';
+
+        }
+
+    });
+}
+
 
 /* ====================== WORKING ON LIKE ACTIONS ====================== */
 // const postContent = document.getElementsByClassName('post-content'),

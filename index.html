@@ -59,7 +59,7 @@
             <div class="post-actions">
                 <i class="far fa-heart heart-icon"></i>
                 <i class="far fa-comment comment-icon 0"></i>
-                <i class="far fa-paper-plane"></i>
+                <i class="far fa-paper-plane sharePostIcon"></i>
                 <i class="fas fa-tags"></i>
             </div>
             <div class="post-caption" id="post-caption">
@@ -90,7 +90,7 @@
             <div class="post-actions">
                 <i class="far fa-heart heart-icon"></i>
                 <i class="far fa-comment comment-icon 1"></i>
-                <i class="far fa-paper-plane"></i>
+                <i class="far fa-paper-plane sharePostIcon"></i>
                 <i class="fas fa-tags"></i>
             </div>
             <div class="post-caption" id="post-caption">
@@ -124,6 +124,44 @@
             <img src="images/bill-gates-avatar.jpg" alt="Avatar" class="avatar-image" />
         </a>
     </div>
+
+
+    <!-- share with friends  -->
+    <div class="shareContainer" id="shareContainer">
+        <!-- top -->
+        <div class="shareContainer__top">
+            <span class="shareContainer__top__closeIcon" id="shareContainer__top__closeIcon">
+                &times;
+            </span>
+            <span class="shareContainer__top__title">Partager</span>
+            <span class="shareContainer__top__shareAnchor">Partager</span>
+        </div>
+
+        <hr>
+        <!-- Middle -->
+        <div class="shareContainer__middle">
+            <span class="shareContainer__to">A :</span>
+            <input class="shareContainer__searchInput" id="shareContainer__searchInput" type="text" placeholder="Recherchez...">
+        </div>
+
+        <hr>
+        <!-- body -->
+        <div class="shareCntainer__body">
+            <span class="shareContainer__body__suggestions">Suggestions</span>
+            <div class="shareContainer__body__friend">
+                <img src="images/bill-gates-avatar.jpg" alt="" class="shareContainer__body__friendPicture">
+                <span class="shareContainer__body__friendName">Bill Gates</span>
+                <i class="far fa-circle shareContainer__body__selectIcon"></i>
+            </div>
+            <div class="shareContainer__body__friend">
+                <img src="images/bill-gates-avatar.jpg" alt="" class="shareContainer__body__friendPicture">
+                <span class="shareContainer__body__friendName">Bill Gates</span>
+                <i class="far fa-circle shareContainer__body__selectIcon"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="" id="overlay"></div>
 
     <script defer src="js/main.js"></script>
 </body>

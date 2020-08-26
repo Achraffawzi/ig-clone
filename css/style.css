@@ -266,6 +266,121 @@ i {
     font-size: 12px;
 }
 
+/* sharing a post functionalities */
+.shareContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 999;
+    border-radius: 15px;
+    display: none;
+    /* transition: transform 100ms ease-in;
+    transform-origin: center;
+    transform: scale(0); */
+}
+
+.shareContainer__top {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #333;
+}
+
+.shareContainer__top__closeIcon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.shareContainer__top__title {
+    font-weight: 600;
+}
+
+.shareContainer__top__title,
+.shareContainer__top__shareAnchor {
+    font-size: 15px;
+}
+
+.shareContainer__top__shareAnchor {
+    cursor: pointer;
+    color: rgb(53, 111, 219);
+    /* pointer-events: none; */
+}
+
+hr {
+    color:#ddd;
+    border-top: 1px;
+}
+
+.shareContainer__middle {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.shareContainer__to {
+    margin-right: 15px;
+}
+
+.shareContainer__searchInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+}
+
+.shareCntainer__body {
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.shareContainer__body__suggestions {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.shareContainer__body__friend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.shareContainer__body__friendPicture {
+    width: 40px;
+    height: 40px;
+    object-fit: fill;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.shareContainer__body__friendName {
+    font-size: 14px;
+    flex: 1;
+}
+
+.shareContainer__body__selectIcon {
+    font-weight: 100;
+    color: #ddd;
+    font-size: 23px;
+}
+
+.overlay--active {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 998;
+}
+
 /* ====================== PRIVATE CHAT =========================== */
 .private-chat-container .container{
     width: 50%;
